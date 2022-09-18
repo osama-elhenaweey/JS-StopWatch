@@ -1,0 +1,60 @@
+body{
+    height: 100vh;
+    background: url(alvaro-bernal-RgIKRYhmG2k-unsplash.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 50%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 0 3px;
+    border-radius: 30px;
+
+
+}
+#timer{
+    max-width: 100%;
+    font-size: 72px;
+    text-align: center;
+    margin: 0 auto;
+    padding:30px;
+}
+.buttons{
+    text-align: center;
+    margin-top: 20px;
+}
+.buttons button{
+    margin: 0 10px;
+    border: none;
+    background-color:  rgba(255, 255, 255, 0);
+}
+.buttons button i{
+    font-size: 2rem;
+    color: #fff;
+    width: 50px;
+    padding: 13px;
+}
+#play{
+    background-color: green;
+}
+#pause{
+    background-color: yellow;
+}
+#reset{
+    background-color: red;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    #timer{
+        font-size: 45px;
+    }
+    .buttons button i{
+        width: 30px;
+    }
+}
