@@ -47,11 +47,11 @@ function stopWatch(){
 startStopBtn.addEventListener('click',function(){
     if(timeStatues==="stopped"){
         timeInterval=window.setInterval(stopWatch,1000);
-        document.getElementById('startStopBtn').innerHTML=`<i class="fa-solid fa-pause" id="pause"></i>`
+        document.getElementById('startStopBtn').innerHTML=`<span id="pause">Pause</span>`
         timeStatues="started"
     }else{
         window.clearInterval(timeInterval);
-        document.getElementById('startStopBtn').innerHTML=`<i class="fa-solid fa-play" id="play"></i>`
+        document.getElementById('startStopBtn').innerHTML=`<span id="play">Play</span>`
         timeStatues="stopped"
 
     }

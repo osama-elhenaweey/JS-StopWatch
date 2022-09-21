@@ -1,15 +1,15 @@
 body{
     height: 100vh;
-    background: url(alvaro-bernal-RgIKRYhmG2k-unsplash.jpg) no-repeat center center/cover;
+    background: linear-gradient(#141e30 , #243b55);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .container{
-    width: 50%;
+    width: 70%;
     height: 300px;
-    background-color: rgba(255, 255, 255, 0.65);
-    box-shadow: 0 0 3px;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 3px #243b55;
     border-radius: 30px;
 
 
@@ -20,30 +20,33 @@ body{
     text-align: center;
     margin: 0 auto;
     padding:30px;
+    color: #fff;
 }
 .buttons{
     text-align: center;
     margin-top: 20px;
 }
-.buttons button{
-    margin: 0 10px;
-    border: none;
-    background-color:  rgba(255, 255, 255, 0);
-}
-.buttons button i{
-    font-size: 2rem;
+
+
+.btn{
+    padding: 1rem 2rem;
+    border-radius: 5px;
     color: #fff;
-    width: 50px;
-    padding: 13px;
+    border:2px solid #fff ;
+    outline:2px solid #fff ;
+    outline-offset: -6px;
+    font-size: 30px;
+    background-color: #243b55;
+    margin: 0 10px;
+    
+
 }
-#play{
-    background-color: green;
-}
-#pause{
-    background-color: yellow;
-}
-#reset{
-    background-color: red;
+.btn:hover{
+    cursor: pointer;
+    outline-offset: 2px;
+    border:2px solid #ffcc00;
+    outline:2px solid #ffcc00;
+    color: #ffcc00;
 }
 
 
@@ -52,9 +55,19 @@ body{
 
 @media only screen and (max-width: 600px){
     #timer{
-        font-size: 45px;
+        font-size: 30px;
     }
-    .buttons button i{
-        width: 30px;
+    .btn{
+        padding: 0.5rem 1rem ;
+        border-radius: 5px;
+        font-size: 20px;      
     }
+    .container{
+
+        height: 200px;
+
+    
+    
+    }
+    
 }
